@@ -5,51 +5,66 @@
     <meta charset="UTF-8">
     <title>Miguel Sosa</title>
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="img/logo.png" alt="Miguel Sosa's Logo">
             </figure>
         </div>
-        <nav>
+        <nav class="menu">
             <ol>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Experiencia</a></li>
-                <li><a href="#">Reclutamiento</a></li>
+                <li><a class="link" href="./portfolio/index.html">Portafolio</a></li>
+                <li><a class="link" href="#experience">Experiencia</a></li>
+                <li><a class="link" ref="#contact">Reclutamiento</a></li>
             </ol>
         </nav>
     </header>
-    <section>
+    <section class="hero">
         <h1>¡Hola! Soy <strong>Miguel Sosa</strong>. <br /> ¡Soy Desarrollador Full Stack!</h1>
-        <img src="img/VWTiguan.jpg" width="500px" height="300px" alt="Imagen principal"> 
+        <img src="img/VWTiguan.jpg" width="500px" height="300px" alt="Imagen principal">
     </section>
-    <section>
+    <section id="portfolio" class="portfolio">
         <h2>Portafolio</h2>
-        <article>
-            <h3>Platzi Video</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> Diciembre 2020</small></p>
-            <p><small><strong>Puedes verlo en:</strong> Platzi</small></p>
-            <p>Un texto bien largo para el cual no se me ocurrió otra cosa</p>
-            <img src="img/dev.jpg" alt="Coding" width="500px">
-        </article>
-    </section>
-    <section>
-        <h2>Mas sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="img/Tiguan.jpg" width="500px"/>
+        <article class="project">
+            <h3 class="project-title">Platzi Video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> Diciembre 2020</small></p>
+            <p class="project-link"><small><strong>Puedes verlo en:</strong> Platzi</small></p>
+            <p class="project-description">Un texto bien largo para el cual no se me ocurrió otra cosa</p>
+            <figure class="project-img-container">
+                <img class="project-img" src="img/dev.jpg" alt="Coding" width="500px">
             </figure>
-            <h3>Evento Importante</h3>
-            <p>Algo que haya ocurrido en ese evento</p>
-            <a>Ver Evento</a>
         </article>
     </section>
-    <section>Sección Contacto</section>
-    <footer></footer>
+    <section id="experience">
+        <h2>Mas sobre mi experiencia</h2>
+        <article class="experience">
+            <figure class="experience-img-container">
+                <img class="experience-img" src="img/Tiguan.jpg" width="500px" />
+            </figure>
+            <h3 class="experience-title">Evento Importante</h3>
+            <p class="experience-description">Algo que haya ocurrido en ese evento</p>
+            <a class="experience-url"
+                href="https://www.mipatente.com/volkswagen-de-mexico-ofrece-espacios-para-practicas-profesionales/"
+                target="_blank">Ver Evento</a>
+        </article>
+    </section>
+    <section id="contact" class="contact">
+        <form action="/suscripcion/" class="form-email">
+            <h3>Aporta tus comentarios</h3>
+            <input type="text" placeholder="Déjame tu email">
+            <button>Enviar</button>
+        </form>
+    </section>
+    <footer class="footer"></footer>
 </body>
 
 </html>

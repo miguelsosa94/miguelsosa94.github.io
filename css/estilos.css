@@ -1,0 +1,24 @@
+/*Selector de Etiqueta: */
+/* body{
+    background: red;
+} */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Selector Descentente : body header div nav ol li a */
+
+/*Selector de clase .clase*/
+
+
+/*Selector de id #id */
