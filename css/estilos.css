@@ -16,6 +16,16 @@ h6 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: normal;
+    font-style: italic;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
 /* Selector Descentente : body header div nav ol li a */
 
 /*Selector de clase .clase*/
