@@ -1,7 +1,19 @@
 /*Selector de Etiqueta: */
+
+
 /* body{
     background: red;
 } */
+
+.header {
+    background-color: black;
+    color: white;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+}
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
@@ -24,9 +36,44 @@ h1 {
     letter-spacing: 5px;
     text-transform: capitalize;
     text-decoration: underline;
+    color: white;
 }
 
+h1 strong {
+    color: lightskyblue;
+}
+
+.hero {
+    height: 300px;
+    background-image: url("../img/VWTiguan.jpg");
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-color: black;
+}
+
+.project {
+    /* border-top: 10px solid red; */
+    /* border-right: 10px solid green; */
+    /* border-left: 10px solid blue; */
+    /* border-bottom: 10px solid yellow; */
+    border-color: red;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.project .project-detail {
+    width: 500px;
+    height: 200px;
+}
+
+.project .project-img-container {
+    width: 500px;
+}
+
+
 /* Selector Descentente : body header div nav ol li a */
+
 
 /*Selector de clase .clase*/
 
