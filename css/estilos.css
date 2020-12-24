@@ -5,6 +5,10 @@
     background: red;
 } */
 
+.menu ol {
+    margin: 1px;
+}
+
 .header {
     background-color: black;
     color: white;
@@ -17,6 +21,7 @@
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 h1,
@@ -37,6 +42,7 @@ h1 {
     text-transform: capitalize;
     text-decoration: underline;
     color: white;
+    margin: 0px;
 }
 
 h1 strong {
@@ -52,23 +58,50 @@ h1 strong {
     background-color: black;
 }
 
+.portfolio {
+    background-color: lightgray;
+    padding: 10px 5px 1px 10px;
+}
+
 .project {
     /* border-top: 10px solid red; */
     /* border-right: 10px solid green; */
     /* border-left: 10px solid blue; */
     /* border-bottom: 10px solid yellow; */
-    border-color: red;
+    /* border-color: red;
     border-width: 10px;
-    border-style: solid;
+    border-style: solid; */
+    border: 1px solid gray;
+    border-radius: 50px;
+    border-top-left-radius: 1px;
+    background-color: #fafafa;
+    margin: 0px 20px 50px 20px;
+    padding: 20px;
 }
 
 .project .project-detail {
     width: 500px;
     height: 200px;
+    display: inline-block;
 }
 
 .project .project-img-container {
     width: 500px;
+    display: inline-block;
+}
+
+.flexbox {
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+    flex-shrink: 0;
+    margin: 20px;
 }
 
 
