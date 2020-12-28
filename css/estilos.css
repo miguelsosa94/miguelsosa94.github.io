@@ -1,10 +1,5 @@
 /*Selector de Etiqueta: */
 
-
-/* body{
-    background: red;
-} */
-
 .header {
     height: 80px;
     color: black;
@@ -12,6 +7,7 @@
     justify-content: space-between;
     background-color: white;
     border: 3px solid black;
+    margin-top: 1px;
 }
 
 .header ol {
@@ -37,7 +33,7 @@
     background-color: #c4c4c4;
     text-align: center;
     padding: 20px 80px 10px 80px;
-    border-right: 3px solid red;
+    border-right: 3px solid black;
 }
 
 .icon .icon-name {
@@ -47,7 +43,7 @@
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .menu {
@@ -94,7 +90,17 @@ h1 {
 }
 
 h1 strong {
-    color: lightskyblue;
+    color: black;
+}
+
+h2 {
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .hero {
@@ -114,19 +120,36 @@ h1 strong {
 }
 
 .project {
-    /* border-top: 10px solid red; */
-    /* border-right: 10px solid green; */
-    /* border-left: 10px solid blue; */
-    /* border-bottom: 10px solid yellow; */
-    /* border-color: red;
-    border-width: 10px;
-    border-style: solid; */
     border: 1px solid gray;
     border-radius: 50px;
     border-top-left-radius: 1px;
     background-color: #fafafa;
-    margin: 0px 20px 50px 20px;
+    margin: 0px 0px 30px 0px;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project strong {
+    font-family: Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.project-title {
+    font-size: 28px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.project-course,
+.project-date,
+.project-link {
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 20px;
 }
 
 .project .project-detail {
