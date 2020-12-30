@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    height: 80px;
+    height: 10vh;
     width: 100%;
     color: #ad9c7c;
     display: flex;
@@ -82,19 +82,6 @@ h6 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-/* h1 {
-    font-size: 40px;
-    line-height: 1.5;
-    font-weight: normal;
-    font-style: italic;
-    letter-spacing: 5px;
-    text-transform: capitalize;
-    text-decoration: underline;
-    color: white;
-    margin: 0px;
-} */
-
 h1 strong {
     color: black;
 }
@@ -110,8 +97,9 @@ h2 {
 }
 
 .all-container {
-    width: 100%;
-    padding-top: 80px;
+    width: 100vw;
+    padding-top: 10vh;
+    display: block;
 }
 
 .hero {
@@ -119,7 +107,7 @@ h2 {
     flex-wrap: wrap;
     align-content: center;
     background-image: url("../img/soumaya.png");
-    background-size: cover;
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     height: 650px;
 }
