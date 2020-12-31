@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-    height: 80px;
+    height: 10vh;
     width: 100%;
     color: #ad9c7c;
     display: flex;
@@ -82,19 +82,6 @@ h6 {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-/* h1 {
-    font-size: 40px;
-    line-height: 1.5;
-    font-weight: normal;
-    font-style: italic;
-    letter-spacing: 5px;
-    text-transform: capitalize;
-    text-decoration: underline;
-    color: white;
-    margin: 0px;
-} */
-
 h1 strong {
     color: black;
 }
@@ -110,18 +97,22 @@ h2 {
 }
 
 .all-container {
-    width: 100%;
-    padding-top: 80px;
+    width: 100vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .hero {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    background-image: url("../img/soumaya.png");
+    background-image: url("../img/soumaya_real.JPG");
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 650px;
+    min-height: 90vh;
+    min-width: 100vw;
 }
 
 .hero-text {
@@ -146,6 +137,7 @@ h2 {
 }
 
 .sections-container {
+    width: 100%;
     background-color: #262626;
     display: flex;
     padding: 0 10px 50px 10px;
@@ -298,6 +290,21 @@ p {
     justify-content: center;
     padding: 5px 15px 5px 15px;
 }
+
+
+/*Desktop First desde media query mas grande */
+
+@media screen and (max-width:1024px) {}
+
+@media screen and (max-width:768px) {
+    body {
+        /* border: 10px solid red; */
+    }
+}
+
+@media screen and (max-width:480px) {}
+
+@media screen and (max-width:320px) {}
 
 
 /* Selector Descentente : body header div nav ol li a */
