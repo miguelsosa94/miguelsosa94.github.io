@@ -13,6 +13,7 @@ body {
     width: 100%;
     color: #ad9c7c;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #2A2A2A;
     /* margin-top: 0px; */
@@ -226,6 +227,7 @@ p {
     color: black;
     height: 120px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
@@ -289,6 +291,7 @@ p {
     align-items: center;
     justify-content: center;
     padding: 5px 15px 5px 15px;
+    flex-wrap: wrap;
 }
 
 
