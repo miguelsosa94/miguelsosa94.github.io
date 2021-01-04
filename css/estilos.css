@@ -14,6 +14,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    min-width: inherit;
+    box-sizing: border-box;
 }
 
 .header-container {
@@ -22,6 +24,7 @@ body {
     /* max-width: 1000px; */
     margin: 0 auto;
     flex: 1;
+    box-sizing: inherit;
     /* width: 100%; */
 }
 
@@ -45,6 +48,7 @@ body {
 }
 
 .icon {
+    box-sizing: inherit;
     background-color: #1A1A1A;
     text-align: center;
     padding: 15px 80px 10px 80px;
@@ -148,6 +152,7 @@ h2 {
     background-color: #262626;
     display: flex;
     padding: 0 10px 50px 10px;
+    box-sizing: border-box;
     align-content: center;
     justify-content: center;
 }
@@ -158,35 +163,41 @@ h2 {
     padding: 40px 0 0 0;
     display: flex;
     flex-wrap: wrap;
+    flex: 1;
     justify-content: space-evenly;
     align-items: center;
 }
 
 .module {
+    display: inherit;
+    justify-content: center;
+    flex: 1;
     background-color: #595959;
     width: 500px;
+    max-width: 50%;
+    min-width: 40%;
     height: 250px;
     border-radius: 10px;
+    margin: 0 30px;
     margin-bottom: 50px;
     box-shadow: 2px 2px #bababa;
-    box-sizing: border-box;
 }
 
 .module .content {
     display: flex;
+    justify-content: center;
     padding: 5px 20px;
 }
 
 .content .content-text {
     color: white;
-    width: 450px;
+    width: 100%;
     height: 220px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     text-align: justify;
-    margin-right: 15px;
 }
 
 .content-text h3,
@@ -303,7 +314,11 @@ p {
 
 /*Desktop First desde media query mas grande */
 
-@media screen and (max-width:1024px) {}
+@media screen and (max-width:1024px) {
+    .module {
+        display: block;
+    }
+}
 
 @media screen and (max-width:767px) {
     .header {
