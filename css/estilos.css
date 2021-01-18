@@ -1,14 +1,13 @@
 /*Selector de Etiqueta: */
 
 body {
-    display: inline-block;
-    width: 100%;
+    display: block;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
-    overflow-x: scroll;
 }
 
 .header {
+    font-size: 55pt;
     color: #ad9c7c;
     background-color: #2A2A2A;
     display: flex;
@@ -21,11 +20,9 @@ body {
 .header-container {
     display: inherit;
     justify-content: inherit;
-    /* max-width: 1000px; */
     margin: 0 auto;
     flex: 1;
     box-sizing: inherit;
-    /* width: 100%; */
 }
 
 .header ol {
@@ -44,10 +41,11 @@ body {
     display: flex;
     align-items: center;
     padding: 0 15px;
-    font-size: 20px;
+    font-size: .3em;
 }
 
 .icon {
+    display: flex;
     box-sizing: inherit;
     background-color: #1A1A1A;
     text-align: center;
@@ -62,7 +60,7 @@ body {
     text-decoration: none;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
-    font-size: 35px;
+    font-size: .5em;
 }
 
 .menu {
@@ -102,12 +100,13 @@ h2 {
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: .25rem;
     margin-bottom: 30px;
     margin-top: 30px;
 }
 
 .all-container {
+    font-size: 65pt;
     width: 100vw;
     /* margin-top: 10vh; */
     display: flex;
@@ -138,12 +137,12 @@ h2 {
 }
 
 .hero-text h1 {
-    font-size: 60pt;
+    font-size: 1em;
     font-weight: bold;
 }
 
 .hero-text h2 {
-    font-size: 30pt;
+    font-size: .5em;
     font-weight: bold;
 }
 
@@ -158,7 +157,7 @@ h2 {
 }
 
 .modules-container {
-    width: 1200px;
+    /* width: 100%; */
     margin: 40px 10px;
     padding: 40px 0 0 0;
     display: flex;
@@ -203,13 +202,18 @@ h2 {
 .content-text h3,
 p {
     margin: 0 0 20px 0;
-    ;
+    font-size: .4em;
+}
+
+.content-text p {
+    font-size: .2em;
 }
 
 .content-text a {
     display: flex;
     align-self: flex-end;
     color: white;
+    font-size: .3em;
     font-weight: bold;
     margin-top: 0;
 }
@@ -242,12 +246,12 @@ p {
 .contact {
     background-color: #878787;
     color: black;
-    height: 120px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .social-link {
@@ -317,6 +321,8 @@ p {
 @media screen and (max-width:1024px) {
     .module {
         display: block;
+        width: auto;
+        max-width: 90%;
     }
 }
 
@@ -324,7 +330,7 @@ p {
     .header {
         display: block;
         height: auto;
-        /* border: 10px solid red; */
+        border: 1px solid black;
     }
     .header ol {
         display: initial;
@@ -339,7 +345,11 @@ p {
 
 @media screen and (max-width:480px) {}
 
-@media screen and (max-width:320px) {}
+@media screen and (max-width:320px) {
+    .all-container {
+        font-size: 40pt;
+    }
+}
 
 
 /* Selector Descentente : body header div nav ol li a */
