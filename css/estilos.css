@@ -28,6 +28,20 @@
     content: "\e900";
 }
 
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
 
 /*Selector de Etiqueta: */
 
@@ -368,9 +382,35 @@ p {
     }
     .header ol li {
         height: 50px;
+        margin-bottom: .7em;
     }
     .header a {
         justify-content: center;
+        height: 40px;
+        font-size: .8em;
+        text-decoration: underline;
+    }
+    .menu {
+        position: fixed;
+        background: rgba(49, 49, 49, 0.95);
+        z-index: 1;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        bottom: 0;
+    }
+    .menu.is-active {
+        left: 0;
+        transition: 1s;
+    }
+    .burger-button {
+        display: block;
+        z-index: 2;
     }
 }
 
