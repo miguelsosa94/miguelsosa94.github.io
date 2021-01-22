@@ -369,6 +369,9 @@ p {
         width: auto;
         max-width: 90%;
     }
+    .icon {
+        padding: 14px 50px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -387,7 +390,7 @@ p {
     .header a {
         justify-content: center;
         height: 40px;
-        font-size: .8em;
+        font-size: .5em;
         text-decoration: underline;
     }
     .menu {
@@ -403,10 +406,10 @@ p {
         align-items: center;
         justify-content: center;
         bottom: 0;
+        transition: 1s;
     }
     .menu.is-active {
         left: 0;
-        transition: 1s;
     }
     .burger-button {
         display: block;
@@ -416,7 +419,7 @@ p {
 
 @media screen and (max-width:480px) {
     .all-container {
-        font-size: 40pt;
+        font-size: 50pt;
     }
     .contact {
         height: auto;
