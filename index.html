@@ -1,153 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <title>Miguel Sosa</title>
-    <link rel="icon" type="image/png" href="img/favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
-    <!-- <link rel="stylesheet" href="css/media.css" media="screen and (max-width:768px)"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página de Inicio en Construcción – miguelsosa.dev</title>
 </head>
-
 <body>
-    <i class="icon-menu burger-button" id="burguer-menu"></i>
-    <header class="header">
-        <div class="header-container">
-            <div class="icon">
-                <p class="icon-name">Miguel Sosa</p>
-            </div>
-            <nav class="menu">
-                <ol>
-                    <li><a class="link" href="./portfolio/index.html">Portafolio</a></li>
-                    <li><a class="link" href="#experience">Experiencia</a></li>
-                    <li><a class="link" href="http://18.221.175.215:1880/ui/">MIoT</a></li>
-                </ol>
-            </nav>
-        </div>
-    </header>
-    <div class="all-container">
-        <div class="hero">
-            <div class="hero-text">
-                <h1>MIGUEL SOSA</h1>
-                <h2>FULL STACK DEVELOPER</h2>
-            </div>
-        </div>
-        <div class="sections-container">
-            <div class="modules-container">
-                <div class="module">
-                    <div class="content">
-                        <div class="content-text">
-                            <h3>
-                                Acerca de mi.
-                            </h3>
-                            <p><strong>Hola, soy Miguel Sosa.</strong> <br>Ingeniero en sistemas computacionales egresado del Instituto Tecnológico de Pachuca. Apasionado por el desarrollo de software.
-                            </p>
-                            <a href="#">Conoce mas sobre mi >>></a>
-                        </div>
-                        <!-- <div class="content-img">
-                        <img src="./img/me_4.png">
-                    </div> -->
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="content">
-                        <div class="content-text">
-                            <h3>
-                                Experiencia Profesional
-                            </h3>
-                            <p>A lo largo de mi experiencia profesional, he trabajado en diferentes empresas, ayudando a optimizar procesos y al desarrollo de aplicaciones web.<br></p>
-                            <a href="#">Ver mas >>></a>
-                        </div>
-                        <!-- <div class="content-img">
-                        <img src="./img/me_4.png">
-                    </div> -->
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="content">
-                        <div class="content-text">
-                            <h3>
-                                Fotografía
-                            </h3>
-                            <p>Uno de los hobbies que mas disfruto es salir a tomar fotografías de los lugares que visito.</p>
-                            <a href="#">Ver mas >>></a>
-                        </div>
-                        <!-- <div class="content-img">
-                        <img src="./img/me_4.png">
-                    </div> -->
-                    </div>
-                </div>
-                <div class="module">
-                    <div class="content">
-                        <div class="content-text">
-                            <h3>
-                                Proyectos
-                            </h3>
-                            <p>Aquí puedes revisar los proyectos personales que he realizado a lo largo de mi carrera profesional.</p>
-                            <a href="#">Ver mas >>></a>
-                        </div>
-                        <!-- <div class="content-img">
-                        <img src="./img/me_4.png">
-                    </div> -->
-                    </div>
-                </div>
+  <h1>🚧 miguelsosa.dev — En Construcción</h1>
+  <p>Bienvenido a <a href="https://miguelsosa.dev"><strong>miguelsosa.dev</strong></a>. Estoy trabajando en algo especial para este espacio.</p>
 
-            </div>
-        </div>
-    </div>
-    </div>
+  <h2>🛠️ ¿Qué puedes esperar?</h2>
+  <ul>
+    <li>Contenido profesional sobre desarrollo, tecnología y proyectos personales.</li>
+    <li>Un portafolio claro y moderno.</li>
+    <li>Recursos, artículos y herramientas útiles.</li>
+    <li>Varios proyectos tecnológicos en desarrollo.</li>
+  </ul>
 
-    <section id="contact" class="contact">
-        <form action="/suscripcion/" class="form-email">
-            <h3>¡Contactame!</h3>
-            <input type="text" placeholder="Déjame tu email">
-            <button>Enviar</button>
-        </form>
-        <div class="social">
-            <a href="https://twitter.com/miguelsosa94" class="social-link twitter"></a>
-            <a href="https://github.com/miguelsosa94" class="social-link github"></a>
-            <a href="https://instagram.com/miguelsosa94" class="social-link instagram"></a>
-        </div>
-    </section>
-    <footer class="footer">
-        <div>
-            <p>Created by 👉Miguel Sosa👈</p>
-        </div>
-    </footer>
-    <script>
-        const responsive = window.matchMedia('screen and (max-width: 767px)');
-        const menu = document.querySelector('.menu');
-        const burguerMenu = document.querySelector('#burguer-menu');
+  <h2>⏳ Mientras tanto…</h2>
+  <p>Este sitio estará disponible muy pronto. Gracias por tu paciencia.</p>
+  <p>Si necesitas ponerte en contacto, puedes escribirme a: <strong>contacto@miguelsosa.dev</strong></p>
 
+  <hr />
 
+  <h2>🌟 Vuelve pronto</h2>
+  <p>Estoy afinando los últimos detalles para ofrecerte una experiencia limpia, rápida y bien diseñada.</p>
 
-        responsive.addListener(validation);
+  <hr />
 
-        function validation(event) {
-            if (event.matches) {
-                console.log(event)
-                burguerMenu.addEventListener('click', hideShow);
-                menu.addEventListener('click', hideShow);
-            } else {
-                burguerMenu.removeEventListener('click', hideShow);
-                menu.removeEventListener('click', hideShow);
-                console.log('se va')
-            }
-        }
-
-        validation(responsive);
-
-        function hideShow() {
-            if (menu.classList.contains('is-active')) {
-                menu.classList.remove('is-active');
-            } else {
-                menu.classList.add('is-active');
-            }
-        }
-    </script>
+  <footer>
+    <p>© 2026 <a href="https://miguelsosa.dev">miguelsosa.dev</a></p>
+  </footer>
 </body>
-
 </html>
